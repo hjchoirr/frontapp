@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+    color: #000;
+    box-sizing:border-box; /* 경계선 안에.. */ 
+    outline: none; /*input 등에 커거 사면 검은 아웃라인 제거 */
+    font-family: "Noto Sans KR", sans-serif; /* 사이트 기본 폰트 */
+}
+
+html {
+    font-size: 13px; /* 사이트 전체의 기준 폰트사이즈 */
+    background: #f8f8f8; /*회색*/
+}
+/* 스타일 초기화 S*/
+body {
+    margin: 0 auto; /* 마진없이 가운데 오도록 */
+    max-width: 720px;  
+    min-width: 360px;
+    background: #fff;
+}
+
+ul, ol, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+/* 스타일 초기화 E */
+
+/*공통 스타일 S */
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+/*공통 스타일 E */
+
+/* 헤더 영역 S */
+header .site-top {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 66px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 15px;
+}
+
+header .logo img {
+    height: 34px;
+}
+header .site-top i {
+    font-size: 2rem; /* 기준 폰트사이즈의 2배 */
+}
+header .site-top .left i {
+    margin-right: 10px;
+}
+header .site-top .right i {
+    margin-right: 10px;
+}
+header nav {
+    display: flex;
+    height: 44px;
+}
+header nav a {
+    flex-grow: 1;
+    width: 0;
+    text-align: center;
+    line-height: 44px; /* 상하 가운데 글자 위치시키려면 틀의 높이와 맞추기 */ 
+}
+/* 헤더 영역 E */
+
+/* 메인배너 영역 start */
+.main_banner img {
+    width: 100%;
+} 
+/* 메인배너 영역 end */
+
+/* 서브메뉴 영역 start */
+.sub-menus {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub-menus a {
+    width: calc(100% /3);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* 서브메뉴 영역 end */
+
+
